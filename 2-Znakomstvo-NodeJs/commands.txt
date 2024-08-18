@@ -1,0 +1,10 @@
+const myHobbies = ["swimming"]
+myHobbies
+myHobbies.push("hi")
+myHobbies
+global
+const myName = "Valik"
+console.log(myName)
+const myArray = [1,2,3]
+console.log(myArray)
+console.log(myHobbies)
