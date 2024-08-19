@@ -1,0 +1,2 @@
+Content of file source.txt
+This is the appended text.
