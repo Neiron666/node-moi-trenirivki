@@ -1,4 +1,4 @@
-import { EventEmitter } from "events";
+import EventEmitter from "events";
 
 //создаем экземпляр класса EventEmitter и присваеваем его переменной myEmitter
 const myEmitter = new EventEmitter();
