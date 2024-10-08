@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #box {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        width: 100vw;
+        height: auto;
+    }
+
+
+    #comments {
+
+        display: flex;
+        width: 80%;
+        padding: 10px 10px;
+        min-height: 20px;
+        background-color: #787878;
+        color: white;
+        gap: 10px;
+        border-radius: 10px;
+
+    }
+
+    header {
+        width: 100%;
+        height: 100px;
+        max-height: 20%;
+        background-color: #d7f2ff;
+        justify-self: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: auto;
+        max-height: 60%;
+        background-color: #c8c8c8;
+    }
+
+    footer {
+        height: 100px;
+        /* max-height: 20%; */
+        width: 100%;
+        color: aliceblue;
+        background-color: black;
+        text-align: center;
+    }
+
+    form {
+        max-height: 90%;
+        height: inherit;
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    form input,
+    textarea {
+        width: 100%;
+        max-width: inherit;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+    <div id="box">
+        <header>
+            <h1 style="text-align: center;">Header</h1>
+        </header>
+        <main>
+            <h2>Add Product</h2>
+            <form action="/addNewProduct" method="post">
+                <label for="product-name">Input Product Name:</label>
+                <input type="text" name="product-name" id="product-name">
+
+                <label for="price">Input product price:</label>
+                <input type="text" name="price" id="price">
+
+                <label for="message">Input your wishes:</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+
+        </main>
+        <footer>
+            <p>All rights received to Valentine Oleynik</p>
+        </footer>
+    </div>
+</body>
+
+</html>

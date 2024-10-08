@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #box {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+
+
+    header {
+        width: 100%;
+        height: 100px;
+        max-height: 20vh;
+        background-color: #d7f2ff;
+        justify-self: center;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        max-height: 60vh;
+        background-color: #c8c8c8;
+    }
+
+    footer {
+        height: 100px;
+        max-height: 20vh;
+        width: 100%;
+        color: aliceblue;
+        background-color: black;
+        text-align: center;
+    }
+
+    form {
+        max-height: 90%;
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    form input,
+    textarea {
+        width: 100%;
+        max-width: inherit;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+    <div id="box">
+        <header></header>
+        <main>
+            <form action="/" method="post">
+                <label for="user-name">Input Name:</label>
+                <input type="text" name="user-name" id="user-name">
+
+                <label for="email">Input Email:</label>
+                <input type="email" name="email" id="email">
+
+                <label for="message">Input message here:</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+
+        </main>
+        <footer>
+            <p>All rights received to Valentine Oleynik</p>
+        </footer>
+    </div>
+</body>
+
+</html>

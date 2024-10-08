@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Современная страница</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            background-image: url("public/tree-736885_1280.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        main h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        main p {
+            max-width: 600px;
+            text-align: center;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer .social-icons a:hover {
+            color: #2575fc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Добро пожаловать на сайт</h1>
+        <nav>
+            <a href="#">Главная</a>
+            <a href="#">Услуги</a>
+            <a href="#">Контакты</a>
+            <a href="#">Блог</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Главный контент</h2>
+        <p>Это современная версия веб-страницы с более продвинутой версткой и стилизацией. Она использует Flexbox для
+            удобного расположения элементов на странице.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Моя компания. Все права защищены.</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
