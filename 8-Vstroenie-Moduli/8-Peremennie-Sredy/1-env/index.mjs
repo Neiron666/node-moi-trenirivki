@@ -1,4 +1,4 @@
-// import * as dotenv from "dotenv"; - та загружаем все что импортируеться из модуля в одну переменную
+// import * as dotenv from "dotenv"; - так загружаем все что импортируеться из модуля в одну переменную
 // .config() - используется в Node.js для подключения и настройки библиотеки dotenv,
 // которая позволяет работать с переменными среды (environment variables) из файла .env.
 // import { config } from "dotenv";

@@ -1,0 +1,19 @@
+{
+    "name": "1-zadacha-todo-app",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "node app",
+        "dev": "nodemon app"
+    },
+    "keywords": [],
+    "author": "Valik",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "express": "^4.21.1"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.7"
+    }
+}
