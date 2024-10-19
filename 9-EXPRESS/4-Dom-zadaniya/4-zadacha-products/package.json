@@ -1,0 +1,22 @@
+{
+    "name": "4-zadacha-products",
+    "version": "1.0.0",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app",
+        "dev": "nodemon app"
+    },
+    "keywords": [],
+    "author": {
+        "name": "Valentyn Oliynyk",
+        "email": "neiron666@gmail.com"
+    },
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "express": "^4.21.1"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.7"
+    }
+}

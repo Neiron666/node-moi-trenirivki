@@ -29,9 +29,15 @@ const getSingleTaskHandler = (req, res) => {
 
 const postSingleTaskHandler = (req, res) => {
     if (!req.body.title || !req.body.description) {
-        return res
-            .status(400)
-            .json({ error: "Title and description are required" });
+        //Преобразуем переданный объект в строку JSON.
+        //Устанавливает заголовок ответа Content-Type: application/json
+        return (
+            res
+                // код ошиби 400 (Bad Request)
+                .status(400)
+                //отправляет JSON с сообщением об ошибке: { error: "Title and description are required" }.
+                .json({ error: "Title and description are required" })
+        );
     } else {
         //из тела запроса деструктурируем title и description что бы затем присвоить их в новом обьекте
         const { title, description } = req.body;
@@ -65,7 +71,6 @@ const putSingleTaskHandler = (req, res) => {
             task.title = req.body.title || task.title;
             task.description = req.body.description || task.description;
 
-            // Редирект на страницу с обновленной задачей
             res.status(201).json(task); // Возвращаем измененную задачу
         }
     } else {
